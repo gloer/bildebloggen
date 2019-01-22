@@ -4,11 +4,6 @@ const inpTekst = document.querySelector("#inpTekst");
 const skjema = document.querySelector("#skjema");
 const overlay = document.querySelector("#overlay");
 
-const zoom_overlay = document.querySelector("#zoom_overlay");
-const zoom_image = zoom_overlay.querySelector("img");
-const zoom_close = zoom_overlay.querySelector("div");
-
-
 const main = document.querySelector("main");
 
 // Firebase
