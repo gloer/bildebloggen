@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bildebloggen</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <header>
+        <form id="skjema">
+            <label>1</label>
+            <input type="file" id="inpBilde" required>
+            <label>2</label>
+            <input type="text" id="inpTekst" required placeholder="Beskriv bildet">
+            <label>3</label>
+            <button type="submit">Last opp bilde</button>
+        </form>
+    </header>
+
+    <main></main>
+
+    <div id="overlay">
+        <img src="./spinner.gif">
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC2dK8mL5d_Y-wVb4v-NLA-pL7alEnWCp4",
+        authDomain: "bildebloggen-1dbd8.firebaseapp.com",
+        databaseURL: "https://bildebloggen-1dbd8.firebaseio.com",
+        projectId: "bildebloggen-1dbd8",
+        storageBucket: "bildebloggen-1dbd8.appspot.com",
+        messagingSenderId: "1062651001900"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+</html>
